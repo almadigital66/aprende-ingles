@@ -1,0 +1,85 @@
+.login-container {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.login-card {
+  background-color: #1e293b;
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 25px;
+  border-radius: 30px;
+  background-color: #0f172a;
+  padding: 5px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab-btn.activo {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  color: #0f172a;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario.oculto {
+  display: none;
+}
+
+.formulario label {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+.formulario input {
+  background-color: #0f172a;
+  border: 2px solid #334155;
+  color: #f1f5f9;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+.btn-full {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.mensaje-error {
+  color: #f87171;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  min-height: 20px;
+}
