@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - Aprende Inglés</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="login-container">
+    <div class="login-card">
+
+      <div class="tabs">
+        <button class="tab-btn activo" id="tab-login" onclick="cambiarTab('login')">Iniciar sesión</button>
+        <button class="tab-btn" id="tab-registro" onclick="cambiarTab('registro')">Registrarse</button>
+      </div>
+
+      <!-- FORMULARIO LOGIN -->
+      <form id="form-login" class="formulario">
+        <label>Correo electrónico</label>
+        <input type="email" id="login-email" placeholder="tucorreo@ejemplo.com" required>
+
+        <label>Contraseña</label>
+        <input type="password" id="login-password" placeholder="••••••••" required>
+
+        <button type="submit" class="btn-principal btn-full">Ingresar</button>
+        <p id="login-error" class="mensaje-error"></p>
+      </form>
+
+      <!-- FORMULARIO REGISTRO -->
+      <form id="form-registro" class="formulario oculto">
+        <label>Nombre</label>
+        <input type="text" id="registro-nombre" placeholder="Tu nombre" required>
+
+        <label>Correo electrónico</label>
+        <input type="email" id="registro-email" placeholder="tucorreo@ejemplo.com" required>
+
+        <label>Contraseña</label>
+        <input type="password" id="registro-password" placeholder="Mínimo 6 caracteres" required>
+
+        <button type="submit" class="btn-principal btn-full">Crear cuenta</button>
+        <p id="registro-error" class="mensaje-error"></p>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Firebase SDK (versión compatible, sin necesidad de instalar nada) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
