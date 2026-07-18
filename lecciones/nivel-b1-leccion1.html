@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 1: Pasado Continuo</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel B1 &gt; Lección 1</div>
+    <h1>Pasado Continuo (Past Continuous)</h1>
+    <p class="subtitulo">Para hablar de acciones que estaban en progreso en un momento del pasado.</p>
+
+    <!-- SECCIÓN 1: TEORÍA -->
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa para describir una acción que estaba ocurriendo en un momento específico del pasado, muchas veces interrumpida por otra acción.</p>
+
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> sujeto + <b>was/were</b> + verbo + <b>-ing</b>. Ejemplo: <i>I was studying.</i>
+      </div>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I was studying</span><span class="palabra-es">Yo estaba estudiando</span><button class="btn-audio" onclick="hablar('I was studying')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">You were working</span><span class="palabra-es">Tú estabas trabajando</span><button class="btn-audio" onclick="hablar('You were working')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She was cooking</span><span class="palabra-es">Ella estaba cocinando</span><button class="btn-audio" onclick="hablar('She was cooking')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They were sleeping</span><span class="palabra-es">Ellos estaban durmiendo</span><button class="btn-audio" onclick="hablar('They were sleeping')">🔊</button></div>
+      </div>
+
+      <h3>Uso más común: acción interrumpida</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I was sleeping when the phone rang.</b> <i>(Yo estaba durmiendo cuando el teléfono sonó.)</i> <button class="btn-audio" onclick="hablar('I was sleeping when the phone rang')">🔊</button></li>
+        <li><b>She was cooking when I arrived.</b> <i>(Ella estaba cocinando cuando llegué.)</i> <button class="btn-audio" onclick="hablar('She was cooking when I arrived')">🔊</button></li>
+        <li><b>We were watching TV when the power went out.</b> <i>(Estábamos viendo TV cuando se fue la luz.)</i> <button class="btn-audio" onclick="hablar('We were watching TV when the power went out')">🔊</button></li>
+      </ul>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> Normalmente la acción "más larga" va en pasado continuo (was sleeping), y la acción que la interrumpe va en pasado simple (rang). Se conectan con <b>"when"</b>.
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: NEGATIVO Y PREGUNTAS -->
+    <section class="bloque">
+      <h2>2. Forma negativa y preguntas</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I wasn't listening</span><span class="palabra-es">Yo no estaba escuchando</span><button class="btn-audio" onclick="hablar('I was not listening')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They weren't studying</span><span class="palabra-es">Ellos no estaban estudiando</span><button class="btn-audio" onclick="hablar('They were not studying')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">What were you doing?</span><span class="palabra-es">¿Qué estabas haciendo?</span><button class="btn-audio" onclick="hablar('What were you doing?')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "I ___ (sleep) when the phone rang":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">was sleeping</button>
+        <button class="opcion" onclick="revisar(this, 'b')">slept</button>
+        <button class="opcion" onclick="revisar(this, 'c')">sleep</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "They ___ (study) when I called":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">study</button>
+        <button class="opcion" onclick="revisar(this, 'b')">studied</button>
+        <button class="opcion" onclick="revisar(this, 'c')">were studying</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. ¿Cómo se dice "¿Qué estabas haciendo?" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">What did you do?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">What were you doing?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">What are you doing?</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. Forma negativa de "I was listening":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">I wasn't listening</button>
+        <button class="opcion" onclick="revisar(this, 'b')">I didn't listening</button>
+        <button class="opcion" onclick="revisar(this, 'c')">I weren't listening</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="../index.html" class="btn-secundario">← Volver al inicio</a>
+      <a href="nivel-b1-leccion2.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
