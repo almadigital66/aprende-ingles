@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A1 - Lección 9: La Hora</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A1 &gt; Lección 9</div>
+    <h1>La Hora (Telling Time)</h1>
+    <p class="subtitulo">Aprende a preguntar y decir la hora en inglés.</p>
+
+    <!-- SECCIÓN 1: PREGUNTAR LA HORA -->
+    <section class="bloque">
+      <h2>1. Preguntar la hora</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">What time is it?</span><span class="palabra-es">¿Qué hora es?</span><button class="btn-audio" onclick="hablar('What time is it?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It's 3 o'clock</span><span class="palabra-es">Son las 3 en punto</span><button class="btn-audio" onclick="hablar('It is three o clock')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: FORMAS DE DECIR LA HORA -->
+    <section class="bloque">
+      <h2>2. Cómo decir la hora</h2>
+      <p>Hay varias formas comunes de expresar la hora en inglés:</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">It's 5:00 (five o'clock)</span><span class="palabra-es">Son las 5:00</span><button class="btn-audio" onclick="hablar('It is five o clock')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It's 5:15 (a quarter past five)</span><span class="palabra-es">Son las 5:15</span><button class="btn-audio" onclick="hablar('It is a quarter past five')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It's 5:30 (half past five)</span><span class="palabra-es">Son las 5:30</span><button class="btn-audio" onclick="hablar('It is half past five')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It's 5:45 (a quarter to six)</span><span class="palabra-es">Son las 5:45</span><button class="btn-audio" onclick="hablar('It is a quarter to six')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It's noon</span><span class="palabra-es">Es mediodía</span><button class="btn-audio" onclick="hablar('It is noon')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It's midnight</span><span class="palabra-es">Es medianoche</span><button class="btn-audio" onclick="hablar('It is midnight')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> "Past" se usa para minutos después de la hora (5:15 = quarter past five), y "to" para minutos antes de la siguiente hora (5:45 = quarter to six).
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: RUTINAS CON HORA -->
+    <section class="bloque">
+      <h2>3. Usando la hora en rutinas diarias</h2>
+      <ul class="lista-ejemplos">
+        <li><b>I wake up at 7:00 AM.</b> <i>(Me despierto a las 7:00 AM.)</i> <button class="btn-audio" onclick="hablar('I wake up at seven AM')">🔊</button></li>
+        <li><b>I eat lunch at noon.</b> <i>(Almuerzo al mediodía.)</i> <button class="btn-audio" onclick="hablar('I eat lunch at noon')">🔊</button></li>
+        <li><b>She works from 9 to 5.</b> <i>(Ella trabaja de 9 a 5.)</i> <button class="btn-audio" onclick="hablar('She works from nine to five')">🔊</button></li>
+        <li><b>The movie starts at 8:30 PM.</b> <i>(La película empieza a las 8:30 PM.)</i> <button class="btn-audio" onclick="hablar('The movie starts at eight thirty PM')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 4: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>4. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. ¿Cómo preguntas "¿Qué hora es?" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">What time is it?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">What is your name?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Where are you?</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. ¿Cómo se dice "5:30" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">A quarter past five</button>
+        <button class="opcion" onclick="revisar(this, 'b')">A quarter to five</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Half past five</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. ¿Cómo se dice "mediodía" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Midnight</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Noon</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Morning</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "5:45" se dice como:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">A quarter to six</button>
+        <button class="opcion" onclick="revisar(this, 'b')">A quarter past six</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Half past six</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a1-leccion8.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
