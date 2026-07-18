@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 5: Presente Continuo</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 5</div>
+    <h1>Presente Continuo (Present Continuous)</h1>
+    <p class="subtitulo">Para hablar de acciones que están pasando justo ahora.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa para describir algo que está sucediendo en este momento, mientras hablas. Ejemplo: "Estoy escribiendo", "Ella está comiendo".</p>
+
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> sujeto + <b>am/is/are</b> + verbo + <b>-ing</b>. Ejemplo: <i>I am writing.</i>
+      </div>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I am eating</span><span class="palabra-es">Estoy comiendo</span><button class="btn-audio" onclick="hablar('I am eating')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">You are studying</span><span class="palabra-es">Estás estudiando</span><button class="btn-audio" onclick="hablar('You are studying')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">He is working</span><span class="palabra-es">Él está trabajando</span><button class="btn-audio" onclick="hablar('He is working')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She is sleeping</span><span class="palabra-es">Ella está durmiendo</span><button class="btn-audio" onclick="hablar('She is sleeping')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">We are watching TV</span><span class="palabra-es">Estamos viendo TV</span><button class="btn-audio" onclick="hablar('We are watching TV')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They are playing</span><span class="palabra-es">Ellos están jugando</span><button class="btn-audio" onclick="hablar('They are playing')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Reglas para agregar "-ing"</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Work → Working</span><span class="palabra-es">Regla normal</span><button class="btn-audio" onclick="hablar('Working')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Make → Making</span><span class="palabra-es">Se quita la "e"</span><button class="btn-audio" onclick="hablar('Making')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Run → Running</span><span class="palabra-es">Se duplica la consonante</span><button class="btn-audio" onclick="hablar('Running')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> Si el verbo termina en "e" muda (make), se quita antes de agregar "-ing" (making). Si termina en consonante-vocal-consonante corta (run), se duplica la última consonante (running).
+      </div>
+
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I am writing an email.</b> <i>(Estoy escribiendo un correo.)</i> <button class="btn-audio" onclick="hablar('I am writing an email')">🔊</button></li>
+        <li><b>She is reading a book right now.</b> <i>(Ella está leyendo un libro ahora mismo.)</i> <button class="btn-audio" onclick="hablar('She is reading a book right now')">🔊</button></li>
+        <li><b>They are running in the park.</b> <i>(Ellos están corriendo en el parque.)</i> <button class="btn-audio" onclick="hablar('They are running in the park')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>3. Forma negativa y preguntas</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I am not sleeping</span><span class="palabra-es">No estoy durmiendo</span><button class="btn-audio" onclick="hablar('I am not sleeping')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She isn't studying</span><span class="palabra-es">Ella no está estudiando</span><button class="btn-audio" onclick="hablar('She is not studying')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Are you working?</span><span class="palabra-es">¿Estás trabajando?</span><button class="btn-audio" onclick="hablar('Are you working?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Is he coming?</span><span class="palabra-es">¿Él viene?</span><button class="btn-audio" onclick="hablar('Is he coming?')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>4. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "She ___ (sleep) right now":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">sleeps</button>
+        <button class="opcion" onclick="revisar(this, 'b')">is sleeping</button>
+        <button class="opcion" onclick="revisar(this, 'c')">sleep</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Forma correcta de "run" + ing:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">runing</button>
+        <button class="opcion" onclick="revisar(this, 'b')">runeing</button>
+        <button class="opcion" onclick="revisar(this, 'c')">running</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. ¿Cómo se dice "¿Estás trabajando?" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Are you working?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Do you working?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">You are working?</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. Forma correcta de "make" + ing:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">makeing</button>
+        <button class="opcion" onclick="revisar(this, 'b')">making</button>
+        <button class="opcion" onclick="revisar(this, 'c')">makking</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion4.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
