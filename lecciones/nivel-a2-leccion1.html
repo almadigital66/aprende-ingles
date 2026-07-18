@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 1: Pasado de To Be (Was/Were)</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 1</div>
+    <h1>Pasado de "To Be": Was / Were</h1>
+    <p class="subtitulo">Aprende a hablar de cómo eran las cosas en el pasado.</p>
+
+    <!-- SECCIÓN 1: TEORÍA -->
+    <section class="bloque">
+      <h2>1. Was y Were: el pasado de "to be"</h2>
+      <p>Así como "am/is/are" es el presente de "to be", en pasado se usa <b>was</b> y <b>were</b>.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I was</span><span class="palabra-es">Yo era / estaba / fui</span><button class="btn-audio" onclick="hablar('I was')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">You were</span><span class="palabra-es">Tú eras / estabas</span><button class="btn-audio" onclick="hablar('You were')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">He / She / It was</span><span class="palabra-es">Él/Ella era / estaba</span><button class="btn-audio" onclick="hablar('He was, she was')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">We were</span><span class="palabra-es">Nosotros éramos / estábamos</span><button class="btn-audio" onclick="hablar('We were')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They were</span><span class="palabra-es">Ellos eran / estaban</span><button class="btn-audio" onclick="hablar('They were')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> "Was" se usa con I, He, She, It (singular). "Were" se usa con You, We, They (plural, y también con "you" aunque sea una sola persona).
+      </div>
+
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I was tired yesterday.</b> <i>(Yo estaba cansado ayer.)</i> <button class="btn-audio" onclick="hablar('I was tired yesterday')">🔊</button></li>
+        <li><b>She was happy.</b> <i>(Ella estaba feliz.)</i> <button class="btn-audio" onclick="hablar('She was happy')">🔊</button></li>
+        <li><b>They were at school.</b> <i>(Ellos estaban en la escuela.)</i> <button class="btn-audio" onclick="hablar('They were at school')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 2: NEGATIVO Y PREGUNTAS -->
+    <section class="bloque">
+      <h2>2. Forma negativa y preguntas</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I wasn't hungry</span><span class="palabra-es">Yo no tenía hambre</span><button class="btn-audio" onclick="hablar('I was not hungry')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They weren't home</span><span class="palabra-es">Ellos no estaban en casa</span><button class="btn-audio" onclick="hablar('They were not home')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Was she at the party?</span><span class="palabra-es">¿Ella estaba en la fiesta?</span><button class="btn-audio" onclick="hablar('Was she at the party?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Were you sick?</span><span class="palabra-es">¿Estabas enfermo?</span><button class="btn-audio" onclick="hablar('Were you sick?')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: EXPRESIONES DE TIEMPO PASADO -->
+    <section class="bloque">
+      <h2>3. Expresiones de tiempo pasado</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Yesterday</span><span class="palabra-es">Ayer</span><button class="btn-audio" onclick="hablar('Yesterday')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Last night</span><span class="palabra-es">Anoche</span><button class="btn-audio" onclick="hablar('Last night')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Last week</span><span class="palabra-es">La semana pasada</span><button class="btn-audio" onclick="hablar('Last week')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Two days ago</span><span class="palabra-es">Hace dos días</span><button class="btn-audio" onclick="hablar('Two days ago')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>4. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "I ___ tired yesterday" (Yo estaba cansado ayer):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">was</button>
+        <button class="opcion" onclick="revisar(this, 'b')">were</button>
+        <button class="opcion" onclick="revisar(this, 'c')">am</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "They ___ at school" (Ellos estaban en la escuela):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">was</button>
+        <button class="opcion" onclick="revisar(this, 'b')">is</button>
+        <button class="opcion" onclick="revisar(this, 'c')">were</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. Forma negativa de "She was happy":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">She not was happy</button>
+        <button class="opcion" onclick="revisar(this, 'b')">She wasn't happy</button>
+        <button class="opcion" onclick="revisar(this, 'c')">She weren't happy</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. ¿Cómo se dice "¿Estabas enfermo?" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Were you sick?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Was you sick?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Are you sick?</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a1-leccion10.html" class="btn-secundario">← Nivel A1</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
