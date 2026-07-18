@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 4: El Futuro (Going to / Will)</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 4</div>
+    <h1>El Futuro: Going to / Will</h1>
+    <p class="subtitulo">Dos formas de hablar del futuro en inglés, cada una con su propio uso.</p>
+
+    <!-- SECCIÓN 1: GOING TO -->
+    <section class="bloque">
+      <h2>1. "Going to" — Planes ya decididos</h2>
+      <p>Se usa para hablar de algo que <b>ya decidiste hacer</b>, un plan concreto.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I am going to travel</span><span class="palabra-es">Voy a viajar</span><button class="btn-audio" onclick="hablar('I am going to travel')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She is going to study</span><span class="palabra-es">Ella va a estudiar</span><button class="btn-audio" onclick="hablar('She is going to study')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They are going to move</span><span class="palabra-es">Ellos van a mudarse</span><button class="btn-audio" onclick="hablar('They are going to move')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> sujeto + <b>am/is/are</b> + <b>going to</b> + verbo. Ejemplo: <i>I am going to eat.</i>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: WILL -->
+    <section class="bloque">
+      <h2>2. "Will" — Decisiones espontáneas y predicciones</h2>
+      <p>Se usa para decisiones que tomas <b>en el momento</b>, promesas, o predicciones sobre el futuro.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I will help you</span><span class="palabra-es">Yo te ayudaré</span><button class="btn-audio" onclick="hablar('I will help you')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It will rain tomorrow</span><span class="palabra-es">Lloverá mañana</span><button class="btn-audio" onclick="hablar('It will rain tomorrow')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She will call you later</span><span class="palabra-es">Ella te llamará después</span><button class="btn-audio" onclick="hablar('She will call you later')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> sujeto + <b>will</b> + verbo (sin cambios, y sin importar la persona). Ejemplo: <i>I will go, she will go, they will go.</i> Se puede abreviar: <i>I'll, she'll, they'll.</i>
+      </div>
+
+      <h3>Comparación rápida:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I am going to visit my parents this weekend.</b> <i>(Ya lo planeé)</i> <button class="btn-audio" onclick="hablar('I am going to visit my parents this weekend')">🔊</button></li>
+        <li><b>The phone is ringing, I will answer it.</b> <i>(Decisión del momento)</i> <button class="btn-audio" onclick="hablar('The phone is ringing, I will answer it')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 3: NEGATIVO Y PREGUNTAS -->
+    <section class="bloque">
+      <h2>3. Forma negativa y preguntas</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I am not going to go</span><span class="palabra-es">No voy a ir</span><button class="btn-audio" onclick="hablar('I am not going to go')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">I won't be late</span><span class="palabra-es">No llegaré tarde</span><button class="btn-audio" onclick="hablar('I will not be late')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Are you going to come?</span><span class="palabra-es">¿Vas a venir?</span><button class="btn-audio" onclick="hablar('Are you going to come?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Will you help me?</span><span class="palabra-es">¿Me ayudarás?</span><button class="btn-audio" onclick="hablar('Will you help me?')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>4. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. Plan ya decidido: "I ___ to travel next month":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">am going</button>
+        <button class="opcion" onclick="revisar(this, 'b')">will</button>
+        <button class="opcion" onclick="revisar(this, 'c')">go</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Decisión espontánea: "The phone is ringing, I ___ answer it":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">am going to</button>
+        <button class="opcion" onclick="revisar(this, 'b')">going</button>
+        <button class="opcion" onclick="revisar(this, 'c')">will</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. Forma negativa de "will" en "I will be late":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">I not will be late</button>
+        <button class="opcion" onclick="revisar(this, 'b')">I won't be late</button>
+        <button class="opcion" onclick="revisar(this, 'c')">I willn't be late</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. ¿Cómo se dice "¿Vas a venir?" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Are you going to come?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Will you going to come?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">You come?</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion3.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
