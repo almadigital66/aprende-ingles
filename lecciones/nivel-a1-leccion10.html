@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A1 - Lección 10: El Clima</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A1 &gt; Lección 10 (Final)</div>
+    <h1>El Clima (Weather)</h1>
+    <p class="subtitulo">La última lección del nivel A1 — ¡ya casi lo logras!</p>
+
+    <!-- SECCIÓN 1: EL CLIMA -->
+    <section class="bloque">
+      <h2>1. Vocabulario del clima</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Sunny</span><span class="palabra-es">Soleado</span><button class="btn-audio" onclick="hablar('Sunny')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Rainy</span><span class="palabra-es">Lluvioso</span><button class="btn-audio" onclick="hablar('Rainy')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Cloudy</span><span class="palabra-es">Nublado</span><button class="btn-audio" onclick="hablar('Cloudy')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Windy</span><span class="palabra-es">Ventoso</span><button class="btn-audio" onclick="hablar('Windy')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Snowy</span><span class="palabra-es">Nevado</span><button class="btn-audio" onclick="hablar('Snowy')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Hot</span><span class="palabra-es">Caluroso</span><button class="btn-audio" onclick="hablar('Hot')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Cold</span><span class="palabra-es">Frío</span><button class="btn-audio" onclick="hablar('Cold')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Warm</span><span class="palabra-es">Templado / Cálido</span><button class="btn-audio" onclick="hablar('Warm')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: PREGUNTAR Y RESPONDER -->
+    <section class="bloque">
+      <h2>2. Preguntar y hablar del clima</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">How's the weather?</span><span class="palabra-es">¿Cómo está el clima?</span><button class="btn-audio" onclick="hablar('How is the weather?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It's sunny today</span><span class="palabra-es">Está soleado hoy</span><button class="btn-audio" onclick="hablar('It is sunny today')">🔊</button></div>
+      </div>
+
+      <h3>Ejemplos combinados:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>It's cold and windy today.</b> <i>(Está frío y ventoso hoy.)</i> <button class="btn-audio" onclick="hablar('It is cold and windy today')">🔊</button></li>
+        <li><b>I like sunny days.</b> <i>(Me gustan los días soleados.)</i> <button class="btn-audio" onclick="hablar('I like sunny days')">🔊</button></li>
+        <li><b>It's raining, take an umbrella.</b> <i>(Está lloviendo, lleva un paraguas.)</i> <button class="btn-audio" onclick="hablar('It is raining, take an umbrella')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 3: QUIZ FINAL -->
+    <section class="bloque quiz-container">
+      <h2>3. Quiz final del Nivel A1</h2>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. ¿Cómo se dice "soleado" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Sunny</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Rainy</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Snowy</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>2. "How's the weather?" significa:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">¿Qué hora es?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">¿Cómo está el clima?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">¿Cómo te llamas?</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>3. ¿Cómo se dice "frío" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Hot</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Warm</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Cold</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. ¿Cómo se dice "nublado" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Windy</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Cloudy</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Snowy</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="felicitacion">
+      <h2>🎉 ¡Felicidades!</h2>
+      <p>Has completado el Nivel A1 completo. Ya dominas saludos, el verbo "to be", pronombres, números, presente simple, familia, colores, la casa, comida y el clima. ¡Estás listo para el Nivel A2!</p>
+    </div>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a1-leccion9.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
