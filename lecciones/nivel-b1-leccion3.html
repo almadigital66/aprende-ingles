@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 3: Primer Condicional</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 3</div>
+    <h1>Primer Condicional (First Conditional)</h1>
+    <p class="subtitulo">Para hablar de situaciones futuras reales y posibles.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa para hablar de una condición real y su resultado probable en el futuro.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> <b>If</b> + presente simple, <b>will</b> + verbo. Ejemplo: <i>If it rains, I will stay home.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">If it rains, I will stay home</span><span class="palabra-es">Si llueve, me quedaré en casa</span><button class="btn-audio" onclick="hablar('If it rains, I will stay home')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">If you study, you will pass</span><span class="palabra-es">Si estudias, aprobarás</span><button class="btn-audio" onclick="hablar('If you study, you will pass')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">If she calls, I will answer</span><span class="palabra-es">Si ella llama, contestaré</span><button class="btn-audio" onclick="hablar('If she calls, I will answer')">🔊</button></div>
+      </div>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> El orden se puede invertir: <i>I will stay home if it rains</i> — mismo significado, sin coma.
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Forma negativa y preguntas</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">If you don't study, you won't pass</span><span class="palabra-es">Si no estudias, no aprobarás</span><button class="btn-audio" onclick="hablar('If you do not study, you will not pass')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">What will you do if it rains?</span><span class="palabra-es">¿Qué harás si llueve?</span><button class="btn-audio" onclick="hablar('What will you do if it rains?')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "If it ___ (rain), I will stay home":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">rains</button>
+        <button class="opcion" onclick="revisar(this, 'b')">will rain</button>
+        <button class="opcion" onclick="revisar(this, 'c')">rained</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "If you study, you ___ pass":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">pass</button>
+        <button class="opcion" onclick="revisar(this, 'b')">passed</button>
+        <button class="opcion" onclick="revisar(this, 'c')">will pass</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. Forma negativa: "If you don't study, you ___ pass":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">will</button>
+        <button class="opcion" onclick="revisar(this, 'b')">won't</button>
+        <button class="opcion" onclick="revisar(this, 'c')">don't</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. ¿Cómo se dice "¿Qué harás si llueve?"</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">What will you do if it rains?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">What you will do if rains?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">What do you do if it will rain?</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion2.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion4.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
