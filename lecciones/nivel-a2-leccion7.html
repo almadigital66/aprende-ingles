@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 7: Verbos Modales</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 7</div>
+    <h1>Verbos Modales: Can, Must, Should</h1>
+    <p class="subtitulo">Para expresar habilidad, obligación y consejos.</p>
+
+    <!-- SECCIÓN 1: CAN -->
+    <section class="bloque">
+      <h2>1. "Can" — Habilidad y permiso</h2>
+      <p>Se usa para decir que alguien sabe hacer algo, o para pedir/dar permiso.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I can swim</span><span class="palabra-es">Yo sé nadar</span><button class="btn-audio" onclick="hablar('I can swim')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She can speak English</span><span class="palabra-es">Ella sabe hablar inglés</span><button class="btn-audio" onclick="hablar('She can speak English')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Can I go to the bathroom?</span><span class="palabra-es">¿Puedo ir al baño?</span><button class="btn-audio" onclick="hablar('Can I go to the bathroom?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">I can't drive</span><span class="palabra-es">No sé manejar</span><button class="btn-audio" onclick="hablar('I cannot drive')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> "Can" nunca cambia según la persona (I can, she can, they can), y siempre va seguido del verbo sin "to". Ejemplo: <i>She can speak</i>, no "she can to speak".
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: MUST -->
+    <section class="bloque">
+      <h2>2. "Must" — Obligación fuerte</h2>
+      <p>Se usa para reglas, leyes, o algo absolutamente necesario.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">You must wear a seatbelt</span><span class="palabra-es">Debes usar cinturón de seguridad</span><button class="btn-audio" onclick="hablar('You must wear a seatbelt')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">I must study tonight</span><span class="palabra-es">Debo estudiar esta noche</span><button class="btn-audio" onclick="hablar('I must study tonight')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">You mustn't smoke here</span><span class="palabra-es">No debes fumar aquí (prohibido)</span><button class="btn-audio" onclick="hablar('You must not smoke here')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: SHOULD -->
+    <section class="bloque">
+      <h2>3. "Should" — Consejos y recomendaciones</h2>
+      <p>Se usa para dar consejos, más suave que "must".</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">You should sleep more</span><span class="palabra-es">Deberías dormir más</span><button class="btn-audio" onclick="hablar('You should sleep more')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She should see a doctor</span><span class="palabra-es">Ella debería ver a un doctor</span><button class="btn-audio" onclick="hablar('She should see a doctor')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">You shouldn't eat that</span><span class="palabra-es">No deberías comer eso</span><button class="btn-audio" onclick="hablar('You should not eat that')">🔊</button></div>
+      </div>
+
+      <h3>Comparación rápida:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I can play the guitar.</b> <i>(Habilidad)</i> <button class="btn-audio" onclick="hablar('I can play the guitar')">🔊</button></li>
+        <li><b>You must stop at a red light.</b> <i>(Obligación/ley)</i> <button class="btn-audio" onclick="hablar('You must stop at a red light')">🔊</button></li>
+        <li><b>You should exercise more.</b> <i>(Consejo)</i> <button class="btn-audio" onclick="hablar('You should exercise more')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 4: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>4. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. Habilidad: "I ___ swim":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">can</button>
+        <button class="opcion" onclick="revisar(this, 'b')">must</button>
+        <button class="opcion" onclick="revisar(this, 'c')">should</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Regla/ley: "You ___ wear a seatbelt":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">can</button>
+        <button class="opcion" onclick="revisar(this, 'b')">should</button>
+        <button class="opcion" onclick="revisar(this, 'c')">must</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. Consejo: "You ___ sleep more":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">must</button>
+        <button class="opcion" onclick="revisar(this, 'b')">should</button>
+        <button class="opcion" onclick="revisar(this, 'c')">can</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. ¿Cómo se dice "No sé manejar" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">I can't drive</button>
+        <button class="opcion" onclick="revisar(this, 'b')">I mustn't drive</button>
+        <button class="opcion" onclick="revisar(this, 'c')">I shouldn't drive</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion6.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
