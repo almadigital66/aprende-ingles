@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 2: Presente Perfecto Continuo</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 2</div>
+    <h1>Presente Perfecto Continuo</h1>
+    <p class="subtitulo">Para hablar de acciones que empezaron en el pasado y continúan ahora.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa para enfatizar la duración de una acción que sigue pasando, o que acaba de terminar y tiene efectos visibles ahora.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> sujeto + <b>have/has been</b> + verbo + <b>-ing</b>. Ejemplo: <i>I have been studying.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I have been studying</span><span class="palabra-es">He estado estudiando</span><button class="btn-audio" onclick="hablar('I have been studying')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She has been working</span><span class="palabra-es">Ella ha estado trabajando</span><button class="btn-audio" onclick="hablar('She has been working')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They have been waiting</span><span class="palabra-es">Ellos han estado esperando</span><button class="btn-audio" onclick="hablar('They have been waiting')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I have been studying English for two years.</b> <i>(He estado estudiando inglés por dos años.)</i> <button class="btn-audio" onclick="hablar('I have been studying English for two years')">🔊</button></li>
+        <li><b>She has been working here since 2020.</b> <i>(Ella ha estado trabajando aquí desde 2020.)</i> <button class="btn-audio" onclick="hablar('She has been working here since 2020')">🔊</button></li>
+        <li><b>Why are you tired? I have been running.</b> <i>(¿Por qué estás cansado? He estado corriendo.)</i> <button class="btn-audio" onclick="hablar('Why are you tired? I have been running')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> "For" se usa con duración (for two years), "since" con un punto de inicio (since 2020).
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Forma negativa y preguntas</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I haven't been sleeping well</span><span class="palabra-es">No he estado durmiendo bien</span><button class="btn-audio" onclick="hablar('I have not been sleeping well')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">How long have you been studying?</span><span class="palabra-es">¿Cuánto tiempo llevas estudiando?</span><button class="btn-audio" onclick="hablar('How long have you been studying?')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "I ___ (study) English for two years":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">study</button>
+        <button class="opcion" onclick="revisar(this, 'b')">have been studying</button>
+        <button class="opcion" onclick="revisar(this, 'c')">studied</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>2. ¿Cuál usarías con "2020" (un punto de inicio)?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">since</button>
+        <button class="opcion" onclick="revisar(this, 'b')">for</button>
+        <button class="opcion" onclick="revisar(this, 'c')">ago</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>3. ¿Cómo se dice "¿Cuánto tiempo llevas estudiando?"</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">How long you study?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">How long did you study?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">How long have you been studying?</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. Forma negativa de "I have been sleeping well":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">I not have been sleeping well</button>
+        <button class="opcion" onclick="revisar(this, 'b')">I haven't been sleeping well</button>
+        <button class="opcion" onclick="revisar(this, 'c')">I amn't been sleeping well</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion1.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion3.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
