@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 10: Viajes y Transporte</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 10 (Final)</div>
+    <h1>Viajes y Transporte</h1>
+    <p class="subtitulo">La última lección del nivel A2 — ¡ya casi lo logras!</p>
+
+    <!-- SECCIÓN 1: MEDIOS DE TRANSPORTE -->
+    <section class="bloque">
+      <h2>1. Medios de transporte (Means of Transportation)</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Car</span><span class="palabra-es">Carro</span><button class="btn-audio" onclick="hablar('Car')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Bus</span><span class="palabra-es">Autobús</span><button class="btn-audio" onclick="hablar('Bus')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Train</span><span class="palabra-es">Tren</span><button class="btn-audio" onclick="hablar('Train')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Plane</span><span class="palabra-es">Avión</span><button class="btn-audio" onclick="hablar('Plane')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Ship</span><span class="palabra-es">Barco</span><button class="btn-audio" onclick="hablar('Ship')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Bicycle</span><span class="palabra-es">Bicicleta</span><button class="btn-audio" onclick="hablar('Bicycle')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Taxi</span><span class="palabra-es">Taxi</span><button class="btn-audio" onclick="hablar('Taxi')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: VOCABULARIO DE VIAJE -->
+    <section class="bloque">
+      <h2>2. Vocabulario de viaje (Travel Vocabulary)</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Airport</span><span class="palabra-es">Aeropuerto</span><button class="btn-audio" onclick="hablar('Airport')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Ticket</span><span class="palabra-es">Boleto</span><button class="btn-audio" onclick="hablar('Ticket')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Passport</span><span class="palabra-es">Pasaporte</span><button class="btn-audio" onclick="hablar('Passport')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Luggage</span><span class="palabra-es">Equipaje</span><button class="btn-audio" onclick="hablar('Luggage')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Hotel</span><span class="palabra-es">Hotel</span><button class="btn-audio" onclick="hablar('Hotel')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Reservation</span><span class="palabra-es">Reservación</span><button class="btn-audio" onclick="hablar('Reservation')">🔊</button></div>
+      </div>
+
+      <h3>Frases útiles:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>How do I get to the airport?</b> <i>(¿Cómo llego al aeropuerto?)</i> <button class="btn-audio" onclick="hablar('How do I get to the airport?')">🔊</button></li>
+        <li><b>I would like to buy a ticket.</b> <i>(Me gustaría comprar un boleto.)</i> <button class="btn-audio" onclick="hablar('I would like to buy a ticket')">🔊</button></li>
+        <li><b>I have a reservation.</b> <i>(Tengo una reservación.)</i> <button class="btn-audio" onclick="hablar('I have a reservation')">🔊</button></li>
+        <li><b>Where is the train station?</b> <i>(¿Dónde está la estación de tren?)</i> <button class="btn-audio" onclick="hablar('Where is the train station?')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 3: QUIZ FINAL -->
+    <section class="bloque quiz-container">
+      <h2>3. Quiz final del Nivel A2</h2>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>1. ¿Cómo se dice "avión" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Train</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Ship</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Plane</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>2. ¿Cómo se dice "pasaporte" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Passport</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Ticket</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Luggage</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. "I would like to buy a ___" (boleto):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">passport</button>
+        <button class="opcion" onclick="revisar(this, 'b')">ticket</button>
+        <button class="opcion" onclick="revisar(this, 'c')">luggage</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>4. ¿Cómo se dice "equipaje" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Hotel</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Reservation</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Luggage</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="felicitacion">
+      <h2>🎉 ¡Felicidades!</h2>
+      <p>Has completado el Nivel A2 completo. Ya dominas el pasado simple (regular e irregular), el futuro, presente continuo, comparativos, verbos modales, profesiones, presente perfecto y viajes. ¡Estás listo para el Nivel B1!</p>
+    </div>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion9.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
