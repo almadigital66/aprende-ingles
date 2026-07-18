@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 8: Trabajo y Profesiones</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 8</div>
+    <h1>Trabajo y Profesiones</h1>
+    <p class="subtitulo">Vocabulario esencial para hablar de tu trabajo o carrera.</p>
+
+    <!-- SECCIÓN 1: PROFESIONES -->
+    <section class="bloque">
+      <h2>1. Profesiones comunes (Common Jobs)</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Doctor</span><span class="palabra-es">Doctor/a</span><button class="btn-audio" onclick="hablar('Doctor')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Teacher</span><span class="palabra-es">Profesor/a</span><button class="btn-audio" onclick="hablar('Teacher')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Engineer</span><span class="palabra-es">Ingeniero/a</span><button class="btn-audio" onclick="hablar('Engineer')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Nurse</span><span class="palabra-es">Enfermero/a</span><button class="btn-audio" onclick="hablar('Nurse')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Lawyer</span><span class="palabra-es">Abogado/a</span><button class="btn-audio" onclick="hablar('Lawyer')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Chef</span><span class="palabra-es">Cocinero/a</span><button class="btn-audio" onclick="hablar('Chef')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Police officer</span><span class="palabra-es">Policía</span><button class="btn-audio" onclick="hablar('Police officer')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Driver</span><span class="palabra-es">Conductor/a</span><button class="btn-audio" onclick="hablar('Driver')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Programmer</span><span class="palabra-es">Programador/a</span><button class="btn-audio" onclick="hablar('Programmer')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Student</span><span class="palabra-es">Estudiante</span><button class="btn-audio" onclick="hablar('Student')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: PREGUNTAR Y HABLAR DEL TRABAJO -->
+    <section class="bloque">
+      <h2>2. Frases útiles sobre el trabajo</h2>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">What do you do?</span><span class="palabra-es">¿A qué te dedicas?</span><button class="btn-audio" onclick="hablar('What do you do?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">I work as a teacher</span><span class="palabra-es">Trabajo como profesor</span><button class="btn-audio" onclick="hablar('I work as a teacher')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Where do you work?</span><span class="palabra-es">¿Dónde trabajas?</span><button class="btn-audio" onclick="hablar('Where do you work?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">I work at a hospital</span><span class="palabra-es">Trabajo en un hospital</span><button class="btn-audio" onclick="hablar('I work at a hospital')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Office</span><span class="palabra-es">Oficina</span><button class="btn-audio" onclick="hablar('Office')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Salary</span><span class="palabra-es">Salario</span><button class="btn-audio" onclick="hablar('Salary')">🔊</button></div>
+      </div>
+
+      <h3>Ejemplos combinados:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>She is a nurse. She works at a hospital.</b> <i>(Ella es enfermera. Trabaja en un hospital.)</i> <button class="btn-audio" onclick="hablar('She is a nurse. She works at a hospital')">🔊</button></li>
+        <li><b>I am a programmer. I work from home.</b> <i>(Soy programador. Trabajo desde casa.)</i> <button class="btn-audio" onclick="hablar('I am a programmer. I work from home')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 3: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. ¿Cómo se dice "abogado" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Doctor</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Lawyer</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Nurse</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. ¿Cómo preguntas "¿A qué te dedicas?" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Where do you work?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">How are you?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">What do you do?</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. ¿Cómo se dice "programador" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Programmer</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Engineer</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Teacher</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. "I work ___ a teacher" (Trabajo como profesor):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">at</button>
+        <button class="opcion" onclick="revisar(this, 'b')">as</button>
+        <button class="opcion" onclick="revisar(this, 'c')">for</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion7.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
