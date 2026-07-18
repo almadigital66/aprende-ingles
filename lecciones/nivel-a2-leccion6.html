@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 6: Comparativos y Superlativos</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 6</div>
+    <h1>Comparativos y Superlativos</h1>
+    <p class="subtitulo">Aprende a comparar cosas y a decir "el más" o "el mejor".</p>
+
+    <!-- SECCIÓN 1: COMPARATIVOS -->
+    <section class="bloque">
+      <h2>1. Comparativos (más que...)</h2>
+      <p>Se usan para comparar dos cosas.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Big → Bigger</span><span class="palabra-es">Grande → Más grande</span><button class="btn-audio" onclick="hablar('Bigger')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Small → Smaller</span><span class="palabra-es">Pequeño → Más pequeño</span><button class="btn-audio" onclick="hablar('Smaller')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Tall → Taller</span><span class="palabra-es">Alto → Más alto</span><button class="btn-audio" onclick="hablar('Taller')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Beautiful → More beautiful</span><span class="palabra-es">Hermoso → Más hermoso</span><button class="btn-audio" onclick="hablar('More beautiful')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Good → Better</span><span class="palabra-es">Bueno → Mejor</span><button class="btn-audio" onclick="hablar('Better')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Bad → Worse</span><span class="palabra-es">Malo → Peor</span><button class="btn-audio" onclick="hablar('Worse')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> Adjetivos cortos (1 sílaba) agregan <b>"-er"</b> (big → bigger). Adjetivos largos (3+ sílabas) usan <b>"more"</b> (beautiful → more beautiful). Algunos son irregulares (good → better).
+      </div>
+
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>My house is bigger than yours.</b> <i>(Mi casa es más grande que la tuya.)</i> <button class="btn-audio" onclick="hablar('My house is bigger than yours')">🔊</button></li>
+        <li><b>She is taller than her brother.</b> <i>(Ella es más alta que su hermano.)</i> <button class="btn-audio" onclick="hablar('She is taller than her brother')">🔊</button></li>
+        <li><b>This movie is more interesting than that one.</b> <i>(Esta película es más interesante que esa.)</i> <button class="btn-audio" onclick="hablar('This movie is more interesting than that one')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 2: SUPERLATIVOS -->
+    <section class="bloque">
+      <h2>2. Superlativos (el más...)</h2>
+      <p>Se usan para decir que algo es "el más" o "el mejor" de un grupo.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Big → The biggest</span><span class="palabra-es">El más grande</span><button class="btn-audio" onclick="hablar('The biggest')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Tall → The tallest</span><span class="palabra-es">El más alto</span><button class="btn-audio" onclick="hablar('The tallest')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Beautiful → The most beautiful</span><span class="palabra-es">El más hermoso</span><button class="btn-audio" onclick="hablar('The most beautiful')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Good → The best</span><span class="palabra-es">El mejor</span><button class="btn-audio" onclick="hablar('The best')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Bad → The worst</span><span class="palabra-es">El peor</span><button class="btn-audio" onclick="hablar('The worst')">🔊</button></div>
+      </div>
+
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>This is the biggest city in the country.</b> <i>(Esta es la ciudad más grande del país.)</i> <button class="btn-audio" onclick="hablar('This is the biggest city in the country')">🔊</button></li>
+        <li><b>He is the best student in class.</b> <i>(Él es el mejor estudiante de la clase.)</i> <button class="btn-audio" onclick="hablar('He is the best student in class')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 3: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. Comparativo de "tall":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Taller</button>
+        <button class="opcion" onclick="revisar(this, 'b')">More tall</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Tallest</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Comparativo de "beautiful":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Beautifuler</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Beautifullest</button>
+        <button class="opcion" onclick="revisar(this, 'c')">More beautiful</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. Superlativo de "good":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Gooder</button>
+        <button class="opcion" onclick="revisar(this, 'b')">The best</button>
+        <button class="opcion" onclick="revisar(this, 'c')">The goodest</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "My house is ___ than yours" (más grande que):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">bigger</button>
+        <button class="opcion" onclick="revisar(this, 'b')">the biggest</button>
+        <button class="opcion" onclick="revisar(this, 'c')">more big</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion5.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
