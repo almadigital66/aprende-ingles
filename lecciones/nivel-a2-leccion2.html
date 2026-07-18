@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 2: Pasado Simple (Verbos Regulares)</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 2</div>
+    <h1>Pasado Simple: Verbos Regulares</h1>
+    <p class="subtitulo">Aprende a hablar de acciones que ya sucedieron.</p>
+
+    <!-- SECCIÓN 1: TEORÍA -->
+    <section class="bloque">
+      <h2>1. La regla básica: agregar "-ed"</h2>
+      <p>Para formar el pasado de la mayoría de los verbos en inglés, simplemente se agrega <b>"-ed"</b> al final. Y lo mejor: <b>no cambia según la persona</b> (a diferencia del presente).</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Work → Worked</span><span class="palabra-es">Trabajar → Trabajé</span><button class="btn-audio" onclick="hablar('Worked')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Play → Played</span><span class="palabra-es">Jugar → Jugué</span><button class="btn-audio" onclick="hablar('Played')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Watch → Watched</span><span class="palabra-es">Ver → Vi</span><button class="btn-audio" onclick="hablar('Watched')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Study → Studied</span><span class="palabra-es">Estudiar → Estudié</span><button class="btn-audio" onclick="hablar('Studied')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Live → Lived</span><span class="palabra-es">Vivir → Viví</span><button class="btn-audio" onclick="hablar('Lived')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Talk → Talked</span><span class="palabra-es">Hablar → Hablé</span><button class="btn-audio" onclick="hablar('Talked')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> Si el verbo ya termina en "e" (como "live"), solo se agrega "-d". Si termina en consonante+"y" (como "study"), la "y" cambia a "i" antes de agregar "-ed" → studied.
+      </div>
+
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I worked yesterday.</b> <i>(Yo trabajé ayer.)</i> <button class="btn-audio" onclick="hablar('I worked yesterday')">🔊</button></li>
+        <li><b>She studied English last night.</b> <i>(Ella estudió inglés anoche.)</i> <button class="btn-audio" onclick="hablar('She studied English last night')">🔊</button></li>
+        <li><b>They played soccer.</b> <i>(Ellos jugaron fútbol.)</i> <button class="btn-audio" onclick="hablar('They played soccer')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 2: NEGATIVO Y PREGUNTAS -->
+    <section class="bloque">
+      <h2>2. Forma negativa y preguntas</h2>
+      <p>Se usa el auxiliar <b>did</b> — y aquí está la parte buena: el verbo <b>vuelve a su forma original</b> (sin "-ed").</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I didn't work yesterday</span><span class="palabra-es">No trabajé ayer</span><button class="btn-audio" onclick="hablar('I did not work yesterday')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She didn't study</span><span class="palabra-es">Ella no estudió</span><button class="btn-audio" onclick="hablar('She did not study')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Did you work yesterday?</span><span class="palabra-es">¿Trabajaste ayer?</span><button class="btn-audio" onclick="hablar('Did you work yesterday?')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Did she call you?</span><span class="palabra-es">¿Ella te llamó?</span><button class="btn-audio" onclick="hablar('Did she call you?')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. Pasado de "play":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Plaied</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Played</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Playing</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Pasado de "study":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Studyed</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Studying</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Studied</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. "Did you ___ (work) yesterday?" ¿Cuál es correcta?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">work</button>
+        <button class="opcion" onclick="revisar(this, 'b')">worked</button>
+        <button class="opcion" onclick="revisar(this, 'c')">working</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. Forma negativa de "She studied":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">She not studied</button>
+        <button class="opcion" onclick="revisar(this, 'b')">She didn't study</button>
+        <button class="opcion" onclick="revisar(this, 'c')">She didn't studied</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion1.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
