@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel A2 - Lección 3: Verbos Irregulares</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-leccion">
+
+    <div class="migas">Nivel A2 &gt; Lección 3</div>
+    <h1>Pasado Simple: Verbos Irregulares</h1>
+    <p class="subtitulo">Los verbos más usados en inglés no siguen la regla del "-ed".</p>
+
+    <!-- SECCIÓN 1: TEORÍA -->
+    <section class="bloque">
+      <h2>1. ¿Qué son los verbos irregulares?</h2>
+      <p>Son verbos que en pasado <b>cambian de forma completamente</b>, sin seguir la regla de agregar "-ed". No hay una fórmula fija — hay que memorizarlos, pero son los que más vas a usar en conversaciones diarias.</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Go → Went</span><span class="palabra-es">Ir → Fui</span><button class="btn-audio" onclick="hablar('Went')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Have → Had</span><span class="palabra-es">Tener → Tuve</span><button class="btn-audio" onclick="hablar('Had')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Do → Did</span><span class="palabra-es">Hacer → Hice</span><button class="btn-audio" onclick="hablar('Did')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Eat → Ate</span><span class="palabra-es">Comer → Comí</span><button class="btn-audio" onclick="hablar('Ate')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">See → Saw</span><span class="palabra-es">Ver → Vi</span><button class="btn-audio" onclick="hablar('Saw')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Say → Said</span><span class="palabra-es">Decir → Dije</span><button class="btn-audio" onclick="hablar('Said')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Get → Got</span><span class="palabra-es">Obtener → Obtuve</span><button class="btn-audio" onclick="hablar('Got')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Make → Made</span><span class="palabra-es">Hacer/Crear → Hice</span><button class="btn-audio" onclick="hablar('Made')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Come → Came</span><span class="palabra-es">Venir → Vine</span><button class="btn-audio" onclick="hablar('Came')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Take → Took</span><span class="palabra-es">Tomar → Tomé</span><button class="btn-audio" onclick="hablar('Took')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Buy → Bought</span><span class="palabra-es">Comprar → Compré</span><button class="btn-audio" onclick="hablar('Bought')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Sleep → Slept</span><span class="palabra-es">Dormir → Dormí</span><button class="btn-audio" onclick="hablar('Slept')">🔊</button></div>
+      </div>
+
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> La buena noticia es la misma que con los verbos regulares: en pasado, <b>no cambian según la persona</b>. "I went", "she went", "they went" — siempre igual.
+      </div>
+
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I went to the store.</b> <i>(Fui a la tienda.)</i> <button class="btn-audio" onclick="hablar('I went to the store')">🔊</button></li>
+        <li><b>She had a good day.</b> <i>(Ella tuvo un buen día.)</i> <button class="btn-audio" onclick="hablar('She had a good day')">🔊</button></li>
+        <li><b>We ate pizza last night.</b> <i>(Comimos pizza anoche.)</i> <button class="btn-audio" onclick="hablar('We ate pizza last night')">🔊</button></li>
+        <li><b>They came home late.</b> <i>(Llegaron a casa tarde.)</i> <button class="btn-audio" onclick="hablar('They came home late')">🔊</button></li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 2: NEGATIVO Y PREGUNTAS -->
+    <section class="bloque">
+      <h2>2. Forma negativa y preguntas</h2>
+      <p>Igual que con los verbos regulares: se usa <b>did / didn't</b>, y el verbo vuelve a su forma original (sin importar que sea irregular).</p>
+
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I didn't go to the party</span><span class="palabra-es">No fui a la fiesta</span><button class="btn-audio" onclick="hablar('I did not go to the party')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Did you eat breakfast?</span><span class="palabra-es">¿Desayunaste?</span><button class="btn-audio" onclick="hablar('Did you eat breakfast?')">🔊</button></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: QUIZ -->
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. Pasado de "go":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Goed</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Went</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Going</button>
+      </div>
+
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Pasado de "eat":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Eated</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Eaten</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Ate</button>
+      </div>
+
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. "She ___ (have) a good day" ¿Cuál es correcta?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">had</button>
+        <button class="opcion" onclick="revisar(this, 'b')">haved</button>
+        <button class="opcion" onclick="revisar(this, 'c')">have</button>
+      </div>
+
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. Pregunta correcta con "eat" en pasado:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Did you ate?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Did you eat?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">You ate?</button>
+      </div>
+
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-a2-leccion2.html" class="btn-secundario">← Lección anterior</a>
+      <a href="../index.html" class="btn-principal">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
