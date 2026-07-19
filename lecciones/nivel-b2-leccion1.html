@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B2 - Lección 1: Pasado Perfecto</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B2 &gt; Lección 1</div>
+    <h1>Pasado Perfecto (Past Perfect)</h1>
+    <p class="subtitulo">Para hablar de una acción que pasó antes que otra en el pasado.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa para mostrar que una acción pasada ocurrió <b>antes</b> que otra acción también pasada.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> sujeto + <b>had</b> + participio pasado. Ejemplo: <i>I had already eaten when she arrived.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I had eaten</span><span class="palabra-es">Yo ya había comido</span><button class="btn-audio" onclick="hablar('I had eaten')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She had left</span><span class="palabra-es">Ella ya se había ido</span><button class="btn-audio" onclick="hablar('She had left')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">They had finished</span><span class="palabra-es">Ellos ya habían terminado</span><button class="btn-audio" onclick="hablar('They had finished')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I had already eaten when she arrived.</b> <i>(Ya había comido cuando ella llegó.)</i> <button class="btn-audio" onclick="hablar('I had already eaten when she arrived')">🔊</button></li>
+        <li><b>The train had left when we got to the station.</b> <i>(El tren ya se había ido cuando llegamos a la estación.)</i> <button class="btn-audio" onclick="hablar('The train had left when we got to the station')">🔊</button></li>
+        <li><b>She had never seen snow before that trip.</b> <i>(Ella nunca había visto nieve antes de ese viaje.)</i> <button class="btn-audio" onclick="hablar('She had never seen snow before that trip')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Negativo y preguntas</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">I hadn't finished</span><span class="palabra-es">Yo no había terminado</span><button class="btn-audio" onclick="hablar('I had not finished')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Had you ever been there?</span><span class="palabra-es">¿Habías estado ahí antes?</span><button class="btn-audio" onclick="hablar('Had you ever been there?')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "I ___ (eat) when she arrived":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">ate</button>
+        <button class="opcion" onclick="revisar(this, 'b')">had eaten</button>
+        <button class="opcion" onclick="revisar(this, 'c')">have eaten</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>2. "The train ___ (leave) when we arrived":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">had left</button>
+        <button class="opcion" onclick="revisar(this, 'b')">left</button>
+        <button class="opcion" onclick="revisar(this, 'c')">has left</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>3. Forma negativa correcta:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">I not had finished</button>
+        <button class="opcion" onclick="revisar(this, 'b')">I hasn't finished</button>
+        <button class="opcion" onclick="revisar(this, 'c')">I hadn't finished</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. ¿Cómo se dice "¿Habías estado ahí antes?"</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Have you been there?</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Had you been there?</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Were you there?</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="../index.html" class="btn-secundario">← Volver al inicio</a>
+      <a href="nivel-b2-leccion2.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
