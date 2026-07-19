@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel C1 - Lección 2: Inversión Enfática</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel C1 &gt; Lección 2</div>
+    <h1>Inversión Enfática (Emphatic Inversion)</h1>
+    <p class="subtitulo">Una estructura elegante para dar énfasis, común en inglés formal y escrito.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Qué es la inversión?</h2>
+      <p>Cuando una oración empieza con una expresión negativa o restrictiva (never, rarely, not only...), el orden sujeto-verbo se invierte, como en una pregunta.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> expresión negativa + auxiliar + sujeto + verbo. Ejemplo: <i>Never have I seen this.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Never have I seen this</span><span class="palabra-es">Nunca he visto esto</span><button class="btn-audio" onclick="hablar('Never have I seen this')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Rarely does she complain</span><span class="palabra-es">Rara vez se queja</span><button class="btn-audio" onclick="hablar('Rarely does she complain')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Not only was it late, but...</span><span class="palabra-es">No solo llegó tarde, sino...</span><button class="btn-audio" onclick="hablar('Not only was it late, but')">🔊</button></div>
+      </div>
+      <h3>Comparación normal vs enfática:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I have never seen this.</b> <i>(Normal)</i> <button class="btn-audio" onclick="hablar('I have never seen this')">🔊</button></li>
+        <li><b>Never have I seen this.</b> <i>(Enfático, más formal/literario)</i> <button class="btn-audio" onclick="hablar('Never have I seen this')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "Never ___ I seen this":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">have</button>
+        <button class="opcion" onclick="revisar(this, 'b')">has</button>
+        <button class="opcion" onclick="revisar(this, 'c')">had</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "Rarely ___ she complain":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">is</button>
+        <button class="opcion" onclick="revisar(this, 'b')">has</button>
+        <button class="opcion" onclick="revisar(this, 'c')">does</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. ¿Qué pasa con el orden después de "never" al inicio?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">No cambia</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Se invierte (como pregunta)</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Se elimina el verbo</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. Versión enfática de "It was not only late...":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Not only was it late...</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Not only it was late...</button>
+        <button class="opcion" onclick="revisar(this, 'c')">It not only was late...</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-c1-leccion1.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-c1-leccion3.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
