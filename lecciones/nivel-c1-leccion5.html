@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel C1 - Lección 5: Gerundio vs Infinitivo</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel C1 &gt; Lección 5</div>
+    <h1>Gerundio (-ing) vs Infinitivo (to + verbo)</h1>
+    <p class="subtitulo">Algunos verbos requieren gerundio, otros infinitivo, y algunos cambian de significado según cuál usen.</p>
+
+    <section class="bloque">
+      <h2>1. Verbos seguidos de gerundio (-ing)</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Enjoy + -ing</span><span class="palabra-es">Disfrutar</span><button class="btn-audio" onclick="hablar('Enjoy')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Avoid + -ing</span><span class="palabra-es">Evitar</span><button class="btn-audio" onclick="hablar('Avoid')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Suggest + -ing</span><span class="palabra-es">Sugerir</span><button class="btn-audio" onclick="hablar('Suggest')">🔊</button></div>
+      </div>
+      <ul class="lista-ejemplos">
+        <li><b>I enjoy reading books.</b> <i>(Disfruto leer libros.)</i> <button class="btn-audio" onclick="hablar('I enjoy reading books')">🔊</button></li>
+        <li><b>She avoids talking about it.</b> <i>(Ella evita hablar de eso.)</i> <button class="btn-audio" onclick="hablar('She avoids talking about it')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Verbos seguidos de infinitivo (to + verbo)</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Want + to</span><span class="palabra-es">Querer</span><button class="btn-audio" onclick="hablar('Want to')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Decide + to</span><span class="palabra-es">Decidir</span><button class="btn-audio" onclick="hablar('Decide to')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Promise + to</span><span class="palabra-es">Prometer</span><button class="btn-audio" onclick="hablar('Promise to')">🔊</button></div>
+      </div>
+      <ul class="lista-ejemplos">
+        <li><b>I want to travel.</b> <i>(Quiero viajar.)</i> <button class="btn-audio" onclick="hablar('I want to travel')">🔊</button></li>
+        <li><b>She decided to quit.</b> <i>(Ella decidió renunciar.)</i> <button class="btn-audio" onclick="hablar('She decided to quit')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>3. Verbos que cambian de significado</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Stop to do</span><span class="palabra-es">Detenerse para hacer algo</span><button class="btn-audio" onclick="hablar('Stop to do')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Stop doing</span><span class="palabra-es">Dejar de hacer algo</span><button class="btn-audio" onclick="hablar('Stop doing')">🔊</button></div>
+      </div>
+      <ul class="lista-ejemplos">
+        <li><b>I stopped to smoke.</b> <i>(Me detuve para fumar — hice una pausa.)</i> <button class="btn-audio" onclick="hablar('I stopped to smoke')">🔊</button></li>
+        <li><b>I stopped smoking.</b> <i>(Dejé de fumar — ya no fumo más.)</i> <button class="btn-audio" onclick="hablar('I stopped smoking')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> este contraste ("stop to do" vs "stop doing") es uno de los errores más comunes incluso en niveles avanzados.
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>4. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "I enjoy ___ (read) books":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">reading</button>
+        <button class="opcion" onclick="revisar(this, 'b')">to read</button>
+        <button class="opcion" onclick="revisar(this, 'c')">read</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>2. "I want ___ (travel)":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">traveling</button>
+        <button class="opcion" onclick="revisar(this, 'b')">to travel</button>
+        <button class="opcion" onclick="revisar(this, 'c')">travel</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>3. "I stopped smoking" significa:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Me detuve para fumar</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Voy a fumar</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Dejé de fumar completamente</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "She avoids ___ (talk) about it":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">talking</button>
+        <button class="opcion" onclick="revisar(this, 'b')">to talk</button>
+        <button class="opcion" onclick="revisar(this, 'c')">talk</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-c1-leccion4.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-c1-leccion6.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
