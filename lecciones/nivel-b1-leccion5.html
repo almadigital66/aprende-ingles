@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 5: Voz Pasiva</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 5</div>
+    <h1>Voz Pasiva (Passive Voice)</h1>
+    <p class="subtitulo">Para enfocarse en la acción o el objeto, más que en quién la hace.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa cuando el objeto de la acción es más importante que quién la realizó, o cuando no se sabe/importa quién lo hizo.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> sujeto + <b>to be</b> + verbo en <b>participio pasado</b>. Ejemplo: <i>The book was written by her.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">The book was written by her</span><span class="palabra-es">El libro fue escrito por ella</span><button class="btn-audio" onclick="hablar('The book was written by her')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">The house was built in 1990</span><span class="palabra-es">La casa fue construida en 1990</span><button class="btn-audio" onclick="hablar('The house was built in 1990')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">English is spoken here</span><span class="palabra-es">Aquí se habla inglés</span><button class="btn-audio" onclick="hablar('English is spoken here')">🔊</button></div>
+      </div>
+      <h3>Comparación: activa vs pasiva</h3>
+      <ul class="lista-ejemplos">
+        <li><b>She wrote the book.</b> <i>(Activa: el foco es "ella")</i> <button class="btn-audio" onclick="hablar('She wrote the book')">🔊</button></li>
+        <li><b>The book was written by her.</b> <i>(Pasiva: el foco es "el libro")</i> <button class="btn-audio" onclick="hablar('The book was written by her')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Voz pasiva en diferentes tiempos</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">The car is made in Japan</span><span class="palabra-es">Presente: El carro es hecho en Japón</span><button class="btn-audio" onclick="hablar('The car is made in Japan')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">The car was made in Japan</span><span class="palabra-es">Pasado: El carro fue hecho en Japón</span><button class="btn-audio" onclick="hablar('The car was made in Japan')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "The book ___ (write) by her":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">writes</button>
+        <button class="opcion" onclick="revisar(this, 'b')">was written</button>
+        <button class="opcion" onclick="revisar(this, 'c')">wrote</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. ¿Cuál es la oración en voz pasiva?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">She wrote the book</button>
+        <button class="opcion" onclick="revisar(this, 'b')">She writes books</button>
+        <button class="opcion" onclick="revisar(this, 'c')">The book was written by her</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. "English ___ (speak) here":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">is spoken</button>
+        <button class="opcion" onclick="revisar(this, 'b')">speaks</button>
+        <button class="opcion" onclick="revisar(this, 'c')">spoke</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. "The house ___ (build) in 1990":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">builds</button>
+        <button class="opcion" onclick="revisar(this, 'b')">was built</button>
+        <button class="opcion" onclick="revisar(this, 'c')">is building</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion4.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion6.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
