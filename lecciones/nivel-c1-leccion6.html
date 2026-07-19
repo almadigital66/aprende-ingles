@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel C1 - Lección 6: Formal vs Informal</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel C1 &gt; Lección 6</div>
+    <h1>Registro Formal vs Informal</h1>
+    <p class="subtitulo">Cómo adaptar tu inglés según el contexto: trabajo, amigos, correos.</p>
+
+    <section class="bloque">
+      <h2>1. Saludos y despedidas</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Hey! / Hi there!</span><span class="palabra-es">Informal</span><button class="btn-audio" onclick="hablar('Hey! Hi there!')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Good morning / Dear Sir or Madam</span><span class="palabra-es">Formal</span><button class="btn-audio" onclick="hablar('Good morning, Dear Sir or Madam')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">See ya! / Catch you later</span><span class="palabra-es">Informal</span><button class="btn-audio" onclick="hablar('See ya! Catch you later')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Best regards / Sincerely</span><span class="palabra-es">Formal</span><button class="btn-audio" onclick="hablar('Best regards, Sincerely')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Verbos formales vs frasales informales</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Find out (informal) = Discover (formal)</span><span class="palabra-es">Descubrir</span><button class="btn-audio" onclick="hablar('Find out, discover')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Get better (informal) = Improve (formal)</span><span class="palabra-es">Mejorar</span><button class="btn-audio" onclick="hablar('Get better, improve')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Put off (informal) = Postpone (formal)</span><span class="palabra-es">Posponer</span><button class="btn-audio" onclick="hablar('Put off, postpone')">🔊</button></div>
+      </div>
+      <h3>Ejemplos en contexto:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>Informal:</b> Hey, can you find out what happened? <button class="btn-audio" onclick="hablar('Hey, can you find out what happened?')">🔊</button></li>
+        <li><b>Formal:</b> Could you please discover what occurred? <button class="btn-audio" onclick="hablar('Could you please discover what occurred?')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> los phrasal verbs suelen sonar más casuales; sus equivalentes de una sola palabra (latinos en origen) suenan más formales — útil para correos de trabajo.
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. ¿Cuál es más formal para "descubrir"?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Find out</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Discover</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Get</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>2. ¿Cuál despedida es formal?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Best regards</button>
+        <button class="opcion" onclick="revisar(this, 'b')">See ya</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Catch you later</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>3. ¿Cuál es el equivalente formal de "put off"?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Delay it</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Wait</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Postpone</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. ¿Cuál saludo es informal?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Hey there!</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Dear Sir or Madam</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Good morning</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-c1-leccion5.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-c1-leccion7.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
