@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel C1 - Lección 4: Modismos (Idioms)</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel C1 &gt; Lección 4</div>
+    <h1>Modismos Comunes (Idioms)</h1>
+    <p class="subtitulo">Expresiones que no se traducen literalmente, pero que hacen sonar más natural.</p>
+
+    <section class="bloque">
+      <h2>1. Modismos de uso frecuente</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">It's raining cats and dogs</span><span class="palabra-es">Está lloviendo muchísimo</span><button class="btn-audio" onclick="hablar('It is raining cats and dogs')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Break a leg</span><span class="palabra-es">¡Buena suerte!</span><button class="btn-audio" onclick="hablar('Break a leg')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Piece of cake</span><span class="palabra-es">Pan comido / Muy fácil</span><button class="btn-audio" onclick="hablar('Piece of cake')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Under the weather</span><span class="palabra-es">Sentirse mal/enfermo</span><button class="btn-audio" onclick="hablar('Under the weather')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Hit the books</span><span class="palabra-es">Ponerse a estudiar</span><button class="btn-audio" onclick="hablar('Hit the books')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Cost an arm and a leg</span><span class="palabra-es">Costar un ojo de la cara</span><button class="btn-audio" onclick="hablar('Cost an arm and a leg')">🔊</button></div>
+      </div>
+      <h3>Ejemplos en contexto:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>Don't worry, this exam is a piece of cake.</b> <i>(No te preocupes, este examen es pan comido.)</i> <button class="btn-audio" onclick="hablar('Do not worry, this exam is a piece of cake')">🔊</button></li>
+        <li><b>I'm feeling a bit under the weather today.</b> <i>(Me siento un poco mal hoy.)</i> <button class="btn-audio" onclick="hablar('I am feeling a bit under the weather today')">🔊</button></li>
+        <li><b>That car must have cost an arm and a leg.</b> <i>(Ese carro debió costar un ojo de la cara.)</i> <button class="btn-audio" onclick="hablar('That car must have cost an arm and a leg')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. ¿Cómo se dice "muy fácil" con un modismo?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Break a leg</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Piece of cake</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Hit the books</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "I'm feeling ___" (me siento mal/enfermo):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">a piece of cake</button>
+        <button class="opcion" onclick="revisar(this, 'b')">break a leg</button>
+        <button class="opcion" onclick="revisar(this, 'c')">under the weather</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. ¿Qué significa "cost an arm and a leg"?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Ser muy costoso</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Ser muy fácil</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Estar enfermo</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. ¿Cómo se dice "ponerse a estudiar"?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Break a leg</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Hit the books</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Piece of cake</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-c1-leccion3.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-c1-leccion5.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
