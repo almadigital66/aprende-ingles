@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 6: Phrasal Verbs</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 6</div>
+    <h1>Phrasal Verbs Comunes</h1>
+    <p class="subtitulo">Combinaciones de verbo + preposición muy usadas en inglés cotidiano.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Qué son los phrasal verbs?</h2>
+      <p>Son verbos combinados con una preposición que cambian completamente su significado original.</p>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Wake up</span><span class="palabra-es">Despertar</span><button class="btn-audio" onclick="hablar('Wake up')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Get up</span><span class="palabra-es">Levantarse</span><button class="btn-audio" onclick="hablar('Get up')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Look for</span><span class="palabra-es">Buscar</span><button class="btn-audio" onclick="hablar('Look for')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Turn on / off</span><span class="palabra-es">Encender / Apagar</span><button class="btn-audio" onclick="hablar('Turn on, turn off')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Give up</span><span class="palabra-es">Rendirse</span><button class="btn-audio" onclick="hablar('Give up')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Find out</span><span class="palabra-es">Descubrir</span><button class="btn-audio" onclick="hablar('Find out')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Come back</span><span class="palabra-es">Regresar</span><button class="btn-audio" onclick="hablar('Come back')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Take off</span><span class="palabra-es">Despegar / Quitarse (ropa)</span><button class="btn-audio" onclick="hablar('Take off')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I wake up at 7 AM.</b> <i>(Me despierto a las 7 AM.)</i> <button class="btn-audio" onclick="hablar('I wake up at seven AM')">🔊</button></li>
+        <li><b>She is looking for her keys.</b> <i>(Ella está buscando sus llaves.)</i> <button class="btn-audio" onclick="hablar('She is looking for her keys')">🔊</button></li>
+        <li><b>Please turn off the lights.</b> <i>(Por favor apaga las luces.)</i> <button class="btn-audio" onclick="hablar('Please turn off the lights')">🔊</button></li>
+        <li><b>Don't give up on your dreams.</b> <i>(No te rindas con tus sueños.)</i> <button class="btn-audio" onclick="hablar('Do not give up on your dreams')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. ¿Cómo se dice "buscar" en inglés (phrasal verb)?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Look for</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Give up</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Find out</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "Please ___ the lights" (apaga):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">turn on</button>
+        <button class="opcion" onclick="revisar(this, 'b')">wake up</button>
+        <button class="opcion" onclick="revisar(this, 'c')">turn off</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. ¿Cómo se dice "rendirse" en inglés?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Come back</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Give up</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Take off</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "I ___ at 7 AM" (me despierto):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">wake up</button>
+        <button class="opcion" onclick="revisar(this, 'b')">turn on</button>
+        <button class="opcion" onclick="revisar(this, 'c')">find out</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion5.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion7.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
