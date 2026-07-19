@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B2 - Lección 3: Voz Pasiva Avanzada</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B2 &gt; Lección 3</div>
+    <h1>Voz Pasiva en Más Tiempos Verbales</h1>
+    <p class="subtitulo">Ampliando la voz pasiva a presente perfecto y futuro.</p>
+
+    <section class="bloque">
+      <h2>1. Voz pasiva en presente perfecto</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">The report has been finished</span><span class="palabra-es">El reporte ha sido terminado</span><button class="btn-audio" onclick="hablar('The report has been finished')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">The email has been sent</span><span class="palabra-es">El correo ha sido enviado</span><button class="btn-audio" onclick="hablar('The email has been sent')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Voz pasiva en futuro</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">The project will be completed</span><span class="palabra-es">El proyecto será completado</span><button class="btn-audio" onclick="hablar('The project will be completed')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">The results will be announced</span><span class="palabra-es">Los resultados serán anunciados</span><button class="btn-audio" onclick="hablar('The results will be announced')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>The house has been sold.</b> <i>(La casa ha sido vendida.)</i> <button class="btn-audio" onclick="hablar('The house has been sold')">🔊</button></li>
+        <li><b>The new policy will be implemented next year.</b> <i>(La nueva política será implementada el próximo año.)</i> <button class="btn-audio" onclick="hablar('The new policy will be implemented next year')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "The report ___ (finish)" (presente perfecto pasivo):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">is finished</button>
+        <button class="opcion" onclick="revisar(this, 'b')">has been finished</button>
+        <button class="opcion" onclick="revisar(this, 'c')">was finished</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "The project ___ (complete)" (futuro pasivo):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">is completed</button>
+        <button class="opcion" onclick="revisar(this, 'b')">was completed</button>
+        <button class="opcion" onclick="revisar(this, 'c')">will be completed</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. "The house ___ (sell)":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">has been sold</button>
+        <button class="opcion" onclick="revisar(this, 'b')">sold</button>
+        <button class="opcion" onclick="revisar(this, 'c')">will sold</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. "The email ___ (send)" (presente perfecto):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">sends</button>
+        <button class="opcion" onclick="revisar(this, 'b')">has been sent</button>
+        <button class="opcion" onclick="revisar(this, 'c')">is send</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b2-leccion2.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b2-leccion4.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
