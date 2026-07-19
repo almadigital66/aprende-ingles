@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 7: Adjetivos y Adverbios</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 7</div>
+    <h1>Adjetivos y Adverbios (-ly)</h1>
+    <p class="subtitulo">Cómo describir acciones, no solo cosas.</p>
+
+    <section class="bloque">
+      <h2>1. Adjetivo vs Adverbio</h2>
+      <p>El adjetivo describe un sustantivo (persona/cosa). El adverbio describe un verbo (cómo se hace la acción). La mayoría de adverbios se forman agregando <b>"-ly"</b> al adjetivo.</p>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Quick → Quickly</span><span class="palabra-es">Rápido → Rápidamente</span><button class="btn-audio" onclick="hablar('Quickly')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Slow → Slowly</span><span class="palabra-es">Lento → Lentamente</span><button class="btn-audio" onclick="hablar('Slowly')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Careful → Carefully</span><span class="palabra-es">Cuidadoso → Cuidadosamente</span><button class="btn-audio" onclick="hablar('Carefully')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Happy → Happily</span><span class="palabra-es">Feliz → Felizmente</span><button class="btn-audio" onclick="hablar('Happily')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Good → Well</span><span class="palabra-es">Bueno → Bien (irregular)</span><button class="btn-audio" onclick="hablar('Well')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>She is a quick learner.</b> <i>(Adjetivo: describe "learner")</i> <button class="btn-audio" onclick="hablar('She is a quick learner')">🔊</button></li>
+        <li><b>She learns quickly.</b> <i>(Adverbio: describe "learns")</i> <button class="btn-audio" onclick="hablar('She learns quickly')">🔊</button></li>
+        <li><b>He drives carefully.</b> <i>(Él maneja cuidadosamente.)</i> <button class="btn-audio" onclick="hablar('He drives carefully')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> "Good" es irregular — su adverbio no es "goodly", es <b>"well"</b>. Ejemplo: <i>She sings well.</i>
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. Adverbio de "quick":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Quickly</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Quickily</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Quick</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Adverbio irregular de "good":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Goodly</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Gooder</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Well</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. "She is a ___ learner" (adjetivo):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">quickly</button>
+        <button class="opcion" onclick="revisar(this, 'b')">quick</button>
+        <button class="opcion" onclick="revisar(this, 'c')">quickness</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "He drives ___" (adverbio, cuidadosamente):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">carefully</button>
+        <button class="opcion" onclick="revisar(this, 'b')">careful</button>
+        <button class="opcion" onclick="revisar(this, 'c')">care</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion6.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion8.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
