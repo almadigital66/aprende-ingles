@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel C1 - Lección 7: Colocaciones</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel C1 &gt; Lección 7</div>
+    <h1>Colocaciones (Collocations)</h1>
+    <p class="subtitulo">Combinaciones naturales de palabras que los hablantes nativos usan sin pensar.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Qué son las colocaciones?</h2>
+      <p>Son combinaciones de palabras que "suenan bien" juntas en inglés, aunque no siempre tengan una traducción literal lógica al español.</p>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Make a decision</span><span class="palabra-es">Tomar una decisión</span><button class="btn-audio" onclick="hablar('Make a decision')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Do homework</span><span class="palabra-es">Hacer tarea</span><button class="btn-audio" onclick="hablar('Do homework')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Take a break</span><span class="palabra-es">Tomar un descanso</span><button class="btn-audio" onclick="hablar('Take a break')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Heavy rain</span><span class="palabra-es">Lluvia fuerte</span><button class="btn-audio" onclick="hablar('Heavy rain')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Make an effort</span><span class="palabra-es">Hacer un esfuerzo</span><button class="btn-audio" onclick="hablar('Make an effort')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Pay attention</span><span class="palabra-es">Prestar atención</span><button class="btn-audio" onclick="hablar('Pay attention')">🔊</button></div>
+      </div>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> en español "hacer" se traduce a veces como "make" y a veces como "do" en inglés — no hay una regla exacta, hay que memorizar las combinaciones más comunes.
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>I need to make a decision soon.</b> <i>(Necesito tomar una decisión pronto.)</i> <button class="btn-audio" onclick="hablar('I need to make a decision soon')">🔊</button></li>
+        <li><b>Please pay attention in class.</b> <i>(Por favor presta atención en clase.)</i> <button class="btn-audio" onclick="hablar('Please pay attention in class')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "___ a decision" (tomar una decisión):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Make</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Do</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Take</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "___ homework" (hacer tarea):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Make</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Take</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Do</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. "___ a break" (tomar un descanso):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Do</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Take</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Make</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "Please ___ attention" (prestar atención):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">pay</button>
+        <button class="opcion" onclick="revisar(this, 'b')">make</button>
+        <button class="opcion" onclick="revisar(this, 'c')">do</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-c1-leccion6.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-c1-leccion8.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
