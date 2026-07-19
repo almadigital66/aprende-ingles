@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 9: Estilo Indirecto</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 9</div>
+    <h1>Estilo Indirecto (Reported Speech)</h1>
+    <p class="subtitulo">Para contar lo que alguien más dijo, sin citarlo textualmente.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cómo funciona?</h2>
+      <p>Cuando reportamos lo que alguien dijo, el tiempo verbal generalmente "retrocede" un paso hacia el pasado.</p>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">"I am happy" → She said she was happy</span><span class="palabra-es">Presente → Pasado simple</span><button class="btn-audio" onclick="hablar('She said she was happy')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">"I work here" → He said he worked there</span><span class="palabra-es">Presente → Pasado simple</span><button class="btn-audio" onclick="hablar('He said he worked there')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">"I will call" → She said she would call</span><span class="palabra-es">Will → Would</span><button class="btn-audio" onclick="hablar('She said she would call')">🔊</button></div>
+      </div>
+      <h3>Ejemplos completos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>Direct:</b> "I am tired." → <b>Reported:</b> She said she was tired. <button class="btn-audio" onclick="hablar('She said she was tired')">🔊</button></li>
+        <li><b>Direct:</b> "I like pizza." → <b>Reported:</b> He said he liked pizza. <button class="btn-audio" onclick="hablar('He said he liked pizza')">🔊</button></li>
+        <li><b>Direct:</b> "I will help you." → <b>Reported:</b> She said she would help me. <button class="btn-audio" onclick="hablar('She said she would help me')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> también cambian los pronombres ("I" → "she/he") y las palabras de tiempo ("today" → "that day", "tomorrow" → "the next day").
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "I am happy" → She said she ___ happy:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">is</button>
+        <button class="opcion" onclick="revisar(this, 'b')">was</button>
+        <button class="opcion" onclick="revisar(this, 'c')">be</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "I will call" → She said she ___ call:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">will</button>
+        <button class="opcion" onclick="revisar(this, 'b')">calls</button>
+        <button class="opcion" onclick="revisar(this, 'c')">would</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. "I like pizza" → He said he ___ pizza:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">liked</button>
+        <button class="opcion" onclick="revisar(this, 'b')">likes</button>
+        <button class="opcion" onclick="revisar(this, 'c')">like</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. "I work here" → He said he worked ___:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">here</button>
+        <button class="opcion" onclick="revisar(this, 'b')">there</button>
+        <button class="opcion" onclick="revisar(this, 'c')">today</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion8.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion10.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
