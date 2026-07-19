@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel C1 - Lección 8: Voz Pasiva con Verbos de Reporte</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel C1 &gt; Lección 8</div>
+    <h1>Voz Pasiva con Verbos de Reporte</h1>
+    <p class="subtitulo">Estructura típica de noticias y textos formales: "It is said that..."</p>
+
+    <section class="bloque">
+      <h2>1. Estructura para generalizar información</h2>
+      <p>Se usa mucho en noticias y textos académicos para reportar creencias generales sin decir quién exactamente lo afirma.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> It + is/was + said/believed/reported + that... Ejemplo: <i>It is said that he is very rich.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">It is said that...</span><span class="palabra-es">Se dice que...</span><button class="btn-audio" onclick="hablar('It is said that')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It is believed that...</span><span class="palabra-es">Se cree que...</span><button class="btn-audio" onclick="hablar('It is believed that')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">It is reported that...</span><span class="palabra-es">Se reporta que...</span><button class="btn-audio" onclick="hablar('It is reported that')">🔊</button></div>
+      </div>
+      <h3>Forma alternativa:</h3>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">He is said to be very rich</span><span class="palabra-es">Se dice que es muy rico</span><button class="btn-audio" onclick="hablar('He is said to be very rich')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">She is believed to live abroad</span><span class="palabra-es">Se cree que vive en el extranjero</span><button class="btn-audio" onclick="hablar('She is believed to live abroad')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>It is said that the company will expand.</b> <i>(Se dice que la empresa se expandirá.)</i> <button class="btn-audio" onclick="hablar('It is said that the company will expand')">🔊</button></li>
+        <li><b>The building is believed to be over 200 years old.</b> <i>(Se cree que el edificio tiene más de 200 años.)</i> <button class="btn-audio" onclick="hablar('The building is believed to be over two hundred years old')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "It is ___ that he is very rich" (se dice):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">said</button>
+        <button class="opcion" onclick="revisar(this, 'b')">say</button>
+        <button class="opcion" onclick="revisar(this, 'c')">saying</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "He ___ to be very rich" (forma alternativa):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">said</button>
+        <button class="opcion" onclick="revisar(this, 'b')">says</button>
+        <button class="opcion" onclick="revisar(this, 'c')">is said</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. ¿Dónde es más común esta estructura?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Conversaciones casuales</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Noticias y textos formales</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Mensajes de texto</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "The building is ___ to be 200 years old" (se cree):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">believed</button>
+        <button class="opcion" onclick="revisar(this, 'b')">belief</button>
+        <button class="opcion" onclick="revisar(this, 'c')">believing</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-c1-leccion7.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-c1-leccion9.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
