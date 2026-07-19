@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 4: Segundo Condicional</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 4</div>
+    <h1>Segundo Condicional (Second Conditional)</h1>
+    <p class="subtitulo">Para hablar de situaciones hipotéticas o imaginarias.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa para hablar de situaciones imaginarias, poco probables o irreales en el presente/futuro.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> <b>If</b> + pasado simple, <b>would</b> + verbo. Ejemplo: <i>If I won the lottery, I would travel.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">If I won the lottery, I would travel</span><span class="palabra-es">Si ganara la lotería, viajaría</span><button class="btn-audio" onclick="hablar('If I won the lottery, I would travel')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">If I were you, I would study</span><span class="palabra-es">Si yo fuera tú, estudiaría</span><button class="btn-audio" onclick="hablar('If I were you, I would study')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">If she had time, she would help</span><span class="palabra-es">Si ella tuviera tiempo, ayudaría</span><button class="btn-audio" onclick="hablar('If she had time, she would help')">🔊</button></div>
+      </div>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> Con "to be" en este condicional, se usa <b>"were"</b> para todas las personas (incluso I/he/she): <i>If I were rich...</i>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Comparación: 1er vs 2do condicional</h2>
+      <ul class="lista-ejemplos">
+        <li><b>If it rains, I will stay home.</b> <i>(Real y posible — 1er condicional)</i> <button class="btn-audio" onclick="hablar('If it rains, I will stay home')">🔊</button></li>
+        <li><b>If I won the lottery, I would buy a house.</b> <i>(Hipotético, poco probable — 2do condicional)</i> <button class="btn-audio" onclick="hablar('If I won the lottery, I would buy a house')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "If I ___ (win) the lottery, I would travel":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">win</button>
+        <button class="opcion" onclick="revisar(this, 'b')">won</button>
+        <button class="opcion" onclick="revisar(this, 'c')">will win</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "If I ___ you, I would study" (Si yo fuera tú):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">am</button>
+        <button class="opcion" onclick="revisar(this, 'b')">was</button>
+        <button class="opcion" onclick="revisar(this, 'c')">were</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. ¿Cuál es hipotético/poco probable?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">If I won the lottery, I would buy a house</button>
+        <button class="opcion" onclick="revisar(this, 'b')">If it rains, I will stay home</button>
+        <button class="opcion" onclick="revisar(this, 'c')">If you study, you will pass</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. "If she had time, she ___ help":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">will</button>
+        <button class="opcion" onclick="revisar(this, 'b')">would</button>
+        <button class="opcion" onclick="revisar(this, 'c')">had</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion3.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion5.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
