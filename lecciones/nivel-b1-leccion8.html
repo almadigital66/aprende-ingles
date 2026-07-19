@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B1 - Lección 8: Cuantificadores</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B1 &gt; Lección 8</div>
+    <h1>Cuantificadores (Some, Any, Much, Many)</h1>
+    <p class="subtitulo">Para hablar de cantidades con precisión.</p>
+
+    <section class="bloque">
+      <h2>1. Some vs Any</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Some</span><span class="palabra-es">Algo/algunos (afirmativo)</span><button class="btn-audio" onclick="hablar('Some')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Any</span><span class="palabra-es">Algo/ninguno (negativo/pregunta)</span><button class="btn-audio" onclick="hablar('Any')">🔊</button></div>
+      </div>
+      <ul class="lista-ejemplos">
+        <li><b>I have some money.</b> <i>(Tengo algo de dinero.)</i> <button class="btn-audio" onclick="hablar('I have some money')">🔊</button></li>
+        <li><b>I don't have any money.</b> <i>(No tengo nada de dinero.)</i> <button class="btn-audio" onclick="hablar('I do not have any money')">🔊</button></li>
+        <li><b>Do you have any questions?</b> <i>(¿Tienes alguna pregunta?)</i> <button class="btn-audio" onclick="hablar('Do you have any questions?')">🔊</button></li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Much vs Many vs A lot of</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Much (incontables)</span><span class="palabra-es">Mucho (agua, dinero, tiempo)</span><button class="btn-audio" onclick="hablar('Much')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Many (contables)</span><span class="palabra-es">Muchos (libros, personas)</span><button class="btn-audio" onclick="hablar('Many')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">A lot of (ambos)</span><span class="palabra-es">Mucho/muchos (funciona para ambos)</span><button class="btn-audio" onclick="hablar('A lot of')">🔊</button></div>
+      </div>
+      <ul class="lista-ejemplos">
+        <li><b>I don't have much time.</b> <i>(No tengo mucho tiempo — incontable.)</i> <button class="btn-audio" onclick="hablar('I do not have much time')">🔊</button></li>
+        <li><b>She has many friends.</b> <i>(Ella tiene muchos amigos — contable.)</i> <button class="btn-audio" onclick="hablar('She has many friends')">🔊</button></li>
+        <li><b>I have a lot of homework.</b> <i>(Tengo mucha tarea.)</i> <button class="btn-audio" onclick="hablar('I have a lot of homework')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> "Much" y "many" se usan más en negativo/preguntas. En afirmativo, "a lot of" suena más natural.
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "I have ___ money" (afirmativo):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">some</button>
+        <button class="opcion" onclick="revisar(this, 'b')">any</button>
+        <button class="opcion" onclick="revisar(this, 'c')">many</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "Do you have ___ questions?" (pregunta):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">some</button>
+        <button class="opcion" onclick="revisar(this, 'b')">much</button>
+        <button class="opcion" onclick="revisar(this, 'c')">any</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. "She has ___ friends" (contable):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">much</button>
+        <button class="opcion" onclick="revisar(this, 'b')">many</button>
+        <button class="opcion" onclick="revisar(this, 'c')">any</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. "I don't have ___ time" (incontable):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">much</button>
+        <button class="opcion" onclick="revisar(this, 'b')">many</button>
+        <button class="opcion" onclick="revisar(this, 'c')">some</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b1-leccion7.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b1-leccion9.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
