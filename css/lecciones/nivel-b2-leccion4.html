@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B2 - Lección 4: Modales de Deducción</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B2 &gt; Lección 4</div>
+    <h1>Modales de Deducción: Must, Might, Can't</h1>
+    <p class="subtitulo">Para expresar certeza, posibilidad e imposibilidad.</p>
+
+    <section class="bloque">
+      <h2>1. Grados de certeza</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Must be (certeza alta)</span><span class="palabra-es">Debe ser</span><button class="btn-audio" onclick="hablar('Must be')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Might/May be (posibilidad)</span><span class="palabra-es">Podría ser</span><button class="btn-audio" onclick="hablar('Might be')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Can't be (imposibilidad)</span><span class="palabra-es">No puede ser</span><button class="btn-audio" onclick="hablar('Cannot be')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>She's not answering, she must be busy.</b> <i>(No contesta, debe estar ocupada.)</i> <button class="btn-audio" onclick="hablar('She is not answering, she must be busy')">🔊</button></li>
+        <li><b>He might be at home.</b> <i>(Podría estar en casa.)</i> <button class="btn-audio" onclick="hablar('He might be at home')">🔊</button></li>
+        <li><b>That can't be true.</b> <i>(Eso no puede ser verdad.)</i> <button class="btn-audio" onclick="hablar('That cannot be true')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> estos modales expresan qué tan seguro estás de algo, no obligación ni habilidad como en A2.
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. Alta certeza: "She's not answering, she ___ be busy":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">must</button>
+        <button class="opcion" onclick="revisar(this, 'b')">might</button>
+        <button class="opcion" onclick="revisar(this, 'c')">can't</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. Imposibilidad: "That ___ be true":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">must</button>
+        <button class="opcion" onclick="revisar(this, 'b')">might</button>
+        <button class="opcion" onclick="revisar(this, 'c')">can't</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>3. Posibilidad: "He ___ be at home":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">must</button>
+        <button class="opcion" onclick="revisar(this, 'b')">might</button>
+        <button class="opcion" onclick="revisar(this, 'c')">can't</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. ¿Cuál expresa mayor certeza?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Must be</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Might be</button>
+        <button class="opcion" onclick="revisar(this, 'c')">May be</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b2-leccion3.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b2-leccion5.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
