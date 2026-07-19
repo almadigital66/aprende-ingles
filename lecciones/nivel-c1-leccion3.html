@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel C1 - Lección 3: Cláusulas Relativas</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel C1 &gt; Lección 3</div>
+    <h1>Cláusulas Relativas (Relative Clauses)</h1>
+    <p class="subtitulo">Para combinar ideas de forma más sofisticada, usando who, which, that, whose.</p>
+
+    <section class="bloque">
+      <h2>1. Pronombres relativos</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">Who (personas)</span><span class="palabra-es">Quien / que</span><button class="btn-audio" onclick="hablar('Who')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Which (cosas)</span><span class="palabra-es">Que / el cual</span><button class="btn-audio" onclick="hablar('Which')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">That (personas o cosas)</span><span class="palabra-es">Que</span><button class="btn-audio" onclick="hablar('That')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">Whose (posesión)</span><span class="palabra-es">Cuyo/a</span><button class="btn-audio" onclick="hablar('Whose')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>The woman who called is my sister.</b> <i>(La mujer que llamó es mi hermana.)</i> <button class="btn-audio" onclick="hablar('The woman who called is my sister')">🔊</button></li>
+        <li><b>The book which I bought is great.</b> <i>(El libro que compré es genial.)</i> <button class="btn-audio" onclick="hablar('The book which I bought is great')">🔊</button></li>
+        <li><b>The man whose car was stolen called the police.</b> <i>(El hombre cuyo carro fue robado llamó a la policía.)</i> <button class="btn-audio" onclick="hablar('The man whose car was stolen called the police')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> "That" puede reemplazar tanto a "who" como a "which" en cláusulas restrictivas (esenciales para el significado).
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="a">
+        <p><b>1. "The woman ___ called is my sister" (persona):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">who</button>
+        <button class="opcion" onclick="revisar(this, 'b')">which</button>
+        <button class="opcion" onclick="revisar(this, 'c')">whose</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>2. "The book ___ I bought is great" (cosa):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">who</button>
+        <button class="opcion" onclick="revisar(this, 'b')">which</button>
+        <button class="opcion" onclick="revisar(this, 'c')">whose</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>3. "The man ___ car was stolen" (posesión):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">who</button>
+        <button class="opcion" onclick="revisar(this, 'b')">which</button>
+        <button class="opcion" onclick="revisar(this, 'c')">whose</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>4. ¿Cuál pronombre sirve para personas Y cosas?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">That</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Who</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Whose</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-c1-leccion2.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-c1-leccion4.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
