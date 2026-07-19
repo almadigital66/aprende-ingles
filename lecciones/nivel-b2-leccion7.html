@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B2 - Lección 7: Preguntas Indirectas</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B2 &gt; Lección 7</div>
+    <h1>Preguntas en Estilo Indirecto</h1>
+    <p class="subtitulo">Cómo reportar preguntas que alguien hizo.</p>
+
+    <section class="bloque">
+      <h2>1. Preguntas con Wh- (what, where, when...)</h2>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">"Where do you live?" → She asked where I lived</span><span class="palabra-es">El orden cambia: sujeto+verbo</span><button class="btn-audio" onclick="hablar('She asked where I lived')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">"What is your name?" → He asked what my name was</span><span class="palabra-es">Sin auxiliar "do/is" al inicio</span><button class="btn-audio" onclick="hablar('He asked what my name was')">🔊</button></div>
+      </div>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> en preguntas indirectas, el orden vuelve a ser como una oración normal (sujeto + verbo), no como pregunta. No se usa "do/does/did".
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Preguntas de Sí/No</h2>
+      <p>Se usa <b>"if"</b> o <b>"whether"</b> para reportar preguntas de sí/no.</p>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">"Do you like coffee?" → She asked if I liked coffee</span><span class="palabra-es">Con "if"</span><button class="btn-audio" onclick="hablar('She asked if I liked coffee')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">"Are you coming?" → He asked if I was coming</span><span class="palabra-es">Con "if"</span><button class="btn-audio" onclick="hablar('He asked if I was coming')">🔊</button></div>
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>3. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "Where do you live?" → She asked where I ___:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">do live</button>
+        <button class="opcion" onclick="revisar(this, 'b')">lived</button>
+        <button class="opcion" onclick="revisar(this, 'c')">live</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>2. "Do you like coffee?" → She asked ___ I liked coffee:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">if</button>
+        <button class="opcion" onclick="revisar(this, 'b')">that</button>
+        <button class="opcion" onclick="revisar(this, 'c')">what</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>3. "What is your name?" → He asked what my name ___:</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">is</button>
+        <button class="opcion" onclick="revisar(this, 'b')">be</button>
+        <button class="opcion" onclick="revisar(this, 'c')">was</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. En preguntas indirectas, ¿se usa "do/does/did"?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Sí, siempre</button>
+        <button class="opcion" onclick="revisar(this, 'b')">No, se elimina</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Solo con "what"</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b2-leccion6.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b2-leccion8.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
