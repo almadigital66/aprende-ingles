@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivel B2 - Lección 2: Tercer Condicional</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lecciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌎 Aprende<span>Inglés</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido-leccion">
+    <div class="migas">Nivel B2 &gt; Lección 2</div>
+    <h1>Tercer Condicional (Third Conditional)</h1>
+    <p class="subtitulo">Para hablar de situaciones hipotéticas del pasado que ya no se pueden cambiar.</p>
+
+    <section class="bloque">
+      <h2>1. ¿Cuándo se usa?</h2>
+      <p>Se usa para imaginar un resultado diferente de algo que ya pasó — arrepentimientos o especulación sobre el pasado.</p>
+      <div class="nota-importante">
+        <b>💡 Estructura:</b> <b>If</b> + pasado perfecto (had + participio), <b>would have</b> + participio. Ejemplo: <i>If I had studied, I would have passed.</i>
+      </div>
+      <div class="tabla-vocab">
+        <div class="fila-vocab"><span class="palabra-en">If I had studied, I would have passed</span><span class="palabra-es">Si hubiera estudiado, habría aprobado</span><button class="btn-audio" onclick="hablar('If I had studied, I would have passed')">🔊</button></div>
+        <div class="fila-vocab"><span class="palabra-en">If she had known, she would have called</span><span class="palabra-es">Si ella hubiera sabido, habría llamado</span><button class="btn-audio" onclick="hablar('If she had known, she would have called')">🔊</button></div>
+      </div>
+      <h3>Ejemplos:</h3>
+      <ul class="lista-ejemplos">
+        <li><b>If I had known, I would have come.</b> <i>(Si hubiera sabido, habría venido.)</i> <button class="btn-audio" onclick="hablar('If I had known, I would have come')">🔊</button></li>
+        <li><b>If we had left earlier, we wouldn't have missed the flight.</b> <i>(Si hubiéramos salido antes, no habríamos perdido el vuelo.)</i> <button class="btn-audio" onclick="hablar('If we had left earlier, we would not have missed the flight')">🔊</button></li>
+      </ul>
+      <div class="nota-importante">
+        <b>💡 Dato clave:</b> este condicional habla de algo que <b>ya no se puede cambiar</b> — es puramente hipotético sobre el pasado.
+      </div>
+    </section>
+
+    <section class="bloque quiz-container">
+      <h2>2. Pon a prueba lo aprendido</h2>
+      <div class="pregunta" data-correcta="b">
+        <p><b>1. "If I ___ (study), I would have passed":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">studied</button>
+        <button class="opcion" onclick="revisar(this, 'b')">had studied</button>
+        <button class="opcion" onclick="revisar(this, 'c')">study</button>
+      </div>
+      <div class="pregunta" data-correcta="c">
+        <p><b>2. "If she had known, she ___ have called":</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">will</button>
+        <button class="opcion" onclick="revisar(this, 'b')">had</button>
+        <button class="opcion" onclick="revisar(this, 'c')">would</button>
+      </div>
+      <div class="pregunta" data-correcta="a">
+        <p><b>3. ¿Sobre qué tiempo habla el tercer condicional?</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">Pasado (ya no se puede cambiar)</button>
+        <button class="opcion" onclick="revisar(this, 'b')">Futuro real</button>
+        <button class="opcion" onclick="revisar(this, 'c')">Presente</button>
+      </div>
+      <div class="pregunta" data-correcta="b">
+        <p><b>4. "If we had left earlier, we ___ missed the flight" (no habríamos):</b></p>
+        <button class="opcion" onclick="revisar(this, 'a')">would have</button>
+        <button class="opcion" onclick="revisar(this, 'b')">wouldn't have</button>
+        <button class="opcion" onclick="revisar(this, 'c')">hadn't</button>
+      </div>
+      <div id="resultado-quiz"></div>
+    </section>
+
+    <div class="navegacion-leccion">
+      <a href="nivel-b2-leccion1.html" class="btn-secundario">← Lección anterior</a>
+      <a href="nivel-b2-leccion3.html" class="btn-principal">Siguiente lección →</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Aprende Inglés Online. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/lecciones.js"></script>
+</body>
+</html>
